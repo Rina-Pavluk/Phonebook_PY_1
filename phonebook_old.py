@@ -14,6 +14,7 @@ def main():
             for line in f.readlines():
                 if line:
                     # print(line.split("\t"))
+                    print('line - ', line)
                     name, num = line.split("\t")
                     data[name] = num
     else:
@@ -26,7 +27,7 @@ def main():
             print("1. Ввести данные")    
             print("2. Поиск")    
             print("3. Выход")
-            user_choice = ("Введите:")
+            user_choice = input("Введите:")
             if user_choice not in ["1","2","3"]:
                 print("Ошибка")
             else:
